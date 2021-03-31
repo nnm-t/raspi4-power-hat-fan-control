@@ -1,0 +1,10 @@
+[Unit]
+Description = Raspberry Pi 4 Power HAT Fan Control
+
+[Service]
+ExecStart = /opt/power-hat-fan-control.py
+Restart = always
+Type = simple
+
+[Install]
+WantedBy = multi-user.target
